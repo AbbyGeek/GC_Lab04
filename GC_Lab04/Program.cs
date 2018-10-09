@@ -19,7 +19,14 @@ namespace GC_Lab04
 
                 Console.WriteLine("Number" + "\t" + "Squared" + "\t" + "Cubed");
                 Console.WriteLine("===== \t ===== \t =====");
-                Console.WriteLine(Math.Pow(num, 1) + "\t" + Math.Pow(num, 2) + "\t" + Math.Pow(num, 3));
+
+                for (int i = 1; i <= num; i++)
+                {
+                    
+                    Console.WriteLine(Math.Pow(i, 1) + "\t" + Math.Pow(i, 2) + "\t" + Math.Pow(i, 3));
+                }
+
+
 
                 Console.WriteLine("Continue? (y/n)");
                 string ans = Console.ReadLine();
